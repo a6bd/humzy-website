@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Humzy</title>
+  <style>
+    body {
+      background-color: #000;
+      color: #fff;
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+
+    header {
+      background-color: #111;
+      padding: 20px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .logo {
+      font-size: 24px;
+      font-weight: bold;
+    }
+
+    nav button {
+      margin-left: 10px;
+      padding: 10px 15px;
+      background-color: #222;
+      border: none;
+      color: white;
+      cursor: pointer;
+      border-radius: 5px;
+    }
+
+    nav button:hover {
+      background-color: #333;
+    }
+
+    .about-section {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 60px 20px;
+      gap: 40px;
+      flex-wrap: wrap;
+    }
+
+    .profile-box, .text-box {
+      background-color: #111;
+      border-radius: 20px;
+      box-shadow: 0 0 25px rgba(0, 255, 255, 0.1);
+      padding: 30px;
+    }
+
+    .profile-box {
+      flex-shrink: 0;
+    }
+
+    .profile-img {
+      width: 400px;
+      height: 400px;
+      object-fit: cover;
+      border-radius: 20px;
+      display: block;
+    }
+
+    .text-box {
+      max-width: 600px;
+    }
+
+    .text-box h1 {
+      font-size: 32px;
+      margin-bottom: 20px;
+    }
+
+    .text-box p {
+      font-size: 16px;
+      line-height: 1.6;
+      margin-bottom: 10px;
+      color: #fff;
+      font-weight: bold;
+    }
+
+    a.more-btn {
+      display: inline-block;
+      margin-top: 10px;
+      padding: 10px 15px;
+      background-color: #00ccff;
+      color: #000;
+      text-decoration: none;
+      border-radius: 5px;
+    }
+
+    section {
+      padding: 40px 20px;
+    }
+
+    hr {
+      border: 1px solid #333;
+      margin: 40px 0;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <div class="logo">Humzy</div>
+    <nav>
+      <button onclick="scrollToSection('who')">Who is Humzy?</button>
+      <button onclick="scrollToSection('how')">How to Become Humzy?</button>
+      <button onclick="scrollToSection('evidence')">Evidence!</button>
+    </nav>
+  </header>
+
+  <section id="about" class="about-section">
+    <div class="profile-box">
+      <section id="who">
+        <img src="images/profile1.png" alt="Humzy Profile" class="profile-img">
+      </section>
+    </div>
+    <div class="text-box">
+      <h1>About Us</h1>
+      <p>Humzy is a 35 yrs old with 6000 children in his basement and likes them so much!</p>
+    </div>
+  </section>
+
+  <hr>
+
+  <section id="how" style="text-align: center;">
+    <h2>How to Become Humzy?</h2>
+    <ul style="list-style-position: inside; display: inline-block; text-align: left;">
+      <li>Fake your giveaways</li>
+      <li>Dm minors</li>
+      <li>Be freaky</li>
+      <li>Have a lot of dog supports to justify your allegations while you goon.</li>
+    </ul>
+  </section>
+
+  <hr>
+
+  <section id="evidence" style="text-align: center;">
+    <a href="more.html" class="more-btn">🔍 مزيد من الأدلة</a>
+  </section>
+
+  <script>
+    function scrollToSection(id) {
+      const section = document.getElementById(id);
+      if (section) {
+        section.scrollIntoView({ behavior: 'smooth' });
+      }
+    }
+  </script>
+
+</body>
+</html>
